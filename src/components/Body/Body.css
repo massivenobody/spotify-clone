@@ -1,5 +1,6 @@
 .body {
   height: 100vh;
   flex: 1;
-  border: 1px solid red;
+  background: linear-gradient(#5028f0, #282828);
+  color: white;
 }
