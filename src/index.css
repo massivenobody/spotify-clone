@@ -2,3 +2,16 @@
   margin: 0;
   font-family: Roboto, sans-serif;
 }
+
+::-webkit-scrollbar {
+  color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}

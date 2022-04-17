@@ -5,12 +5,24 @@ import { setToken, selectToken, setUser } from './components/Login/loginSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import SpotifyWebApi from 'spotify-web-api-js';
 import Player from './components/Player/Player';
+import { setPlaylists } from './components/Player/playerSlice';
 
 const spotify = new SpotifyWebApi();
 
 export default function App() {
   const token = useSelector(selectToken)
   const dispatch = useDispatch()
+
+  function getUserData() {
+    spotify.getMe().then(user =>
+      dispatch(setUser(user)))
+  }
+
+  function getPlaylists() {
+    spotify.getUserPlaylists().then(playlists =>
+      dispatch(setPlaylists(playlists)))
+  }
+
 
   useEffect(() => {
     const tokenObj = getToken();
@@ -20,15 +32,18 @@ export default function App() {
     if (_token) {
       dispatch(setToken(_token))
       spotify.setAccessToken(_token)
-      spotify.getMe().then(user => dispatch(setUser(user)))
+      getUserData()
     }
+
+    getPlaylists()
+
   }, [])
 
   return (
     <div>
       {token ?
-      <Player /> :
-      <Login />}
+        <Player /> :
+        <Login />}
     </div>
   )
 }

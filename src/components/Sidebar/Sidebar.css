@@ -9,6 +9,25 @@
   padding: 10px;
 }
 
+.sidebar > hr {
+  margin: 10px 20px;
+  border: 1px solid #282828;
+}
+
+.sidebar .playlists {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 50vh;
+  padding-right: 20px;
+}
+
+.sidebarPlaylist {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .sidebarTab {
   color: grey;
   transition: color 0.2s;
@@ -27,4 +46,14 @@
 .sidebarTab:hover {
   color: white;
   transition: color 0.2s;
+}
+
+.sidebarPlaylist {
+  color: grey;
+  font-size: 14px;
+  margin: 20px;
+}
+
+.sidebarPlaylist:hover {
+  color: white;
 }
