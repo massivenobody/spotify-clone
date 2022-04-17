@@ -1,0 +1,100 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+  background-color: #282828;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details, .controls, .volume {
+  margin: 20px;
+}
+
+.details {
+  color: white;
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.details img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.info p {
+  width: 28vw;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.info .artist {
+  color: hsla(0,0%,100%,0.6);
+  font-size: 12px;
+}
+
+.controls {
+  flex: 0.4;
+  color: white;
+  width: 225px;
+}
+
+.controls .buttons {
+  display: flex;
+  width: 225px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.controls .play:hover {
+  transform: scale(1.1)
+}
+
+.volume {
+  flex: 0.2;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.slider {
+  position: relative;
+  left: 10px;
+}
+
+.MuiSlider-thumb {
+  color: white !important;
+}
+
+.MuiSlider-thumb:hover {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  color: white;
+}
+
+.Mui-focusVisible {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.MuiSlider-root {
+  cursor: default !important;
+}
+
+.MuiSlider-root:hover {
+  color: #1db954;
+}
+
+.MuiSlider-rail {
+  color: hsla(0,0%,100%,0.3);
+}
+

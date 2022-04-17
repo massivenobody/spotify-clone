@@ -1,6 +1,6 @@
 import React from 'react'
 import Body from '../Body/Body'
-import Controls from '../Controls/Controls'
+import Footer from '../Footer/Footer'
 import Sidebar from '../Sidebar/Sidebar'
 import './Player.css'
 
@@ -11,7 +11,7 @@ export default function Player() {
         <Sidebar />
         <Body />
       </div>
-      <Controls />
+      <Footer />
     </div>
   )
 }
