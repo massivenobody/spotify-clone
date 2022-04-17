@@ -12,7 +12,7 @@ export default function FooterVolume() {
       <ThemeProvider theme={theme}>
         <Slider
           aria-label='volume'
-          className='slider'
+          className='slider vol'
           size='small'
           defaultValue={100}
         />

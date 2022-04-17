@@ -10,6 +10,7 @@
 
 .details, .controls, .volume {
   margin: 20px;
+  max-width: 225px;
 }
 
 .details {
@@ -45,6 +46,10 @@
   flex: 0.4;
   color: white;
   width: 225px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .controls .buttons {
@@ -60,10 +65,12 @@
 }
 
 .volume {
-  flex: 0.2;
+  flex: 0.3;
   display: flex;
   align-items: center;
   color: white;
+  max-width: 160px;
+  padding-right: 20px;
 }
 
 .slider {

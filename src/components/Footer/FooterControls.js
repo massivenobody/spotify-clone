@@ -16,7 +16,7 @@ export default function FooterControls() {
         <SkipNextIcon fontSize='medium' />
         <RepeatIcon fontSize='medium' />
       </div>
-      <Slider size='small'/>
+      <Slider size='small' className='seek'/>
     </div>
   )
 }
