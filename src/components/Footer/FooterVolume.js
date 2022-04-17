@@ -1,7 +1,7 @@
 import React from 'react'
 import ListIcon from '@mui/icons-material/List';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
-import { createTheme, Slider, ThemeProvider } from '@mui/material';
+import { Slider, ThemeProvider } from '@mui/material';
 import theme from '../../app/theme'
 
 export default function FooterVolume() {

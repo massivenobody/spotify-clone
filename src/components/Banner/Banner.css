@@ -1,0 +1,20 @@
+.banner {
+  margin: 60px 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.banner img {
+  width: 192px;
+  height: 192px;
+  box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+  margin-right: 20px;
+}
+
+.banner .info {
+  flex: 1;
+}
+
+.info h1 {
+  font-size: 48px;
+}

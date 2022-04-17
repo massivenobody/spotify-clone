@@ -33,7 +33,7 @@ export default function Sidebar() {
       <hr />
       <div className='playlists'>
         {playlists?.items?.map(playlist => (
-          <SidebarPlaylist name={playlist.name} />
+          <SidebarPlaylist name={playlist.name} key={playlist.id} />
         ))}
       </div>
     </div>
